@@ -19,6 +19,12 @@ dependencies:
   google_fonts: ^6.0.0
   flutter_animate: ^4.5.0
   shimmer: ^3.0.0
+  camera: any
+  permission_handler: any
+  speech_to_text: any
+  audioplayers: any
+  flutter_secure_storage: any
+  flutter_overlay_window: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
