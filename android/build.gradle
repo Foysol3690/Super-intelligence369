@@ -1,0 +1,27 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://chaquo.com/maven" }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects { subproject ->
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    if (subproject.name != 'app') {
+        subproject.ext.flutter = [
+            compileSdkVersion: 36,
+            minSdkVersion: 26,
+            targetSdkVersion: 36,
+            ndkVersion: "28.2.13676358",
+        ]
+    }
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
