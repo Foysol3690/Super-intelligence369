@@ -19,15 +19,17 @@ dependencies:
   google_fonts: ^6.0.0
   flutter_animate: ^4.5.0
   shimmer: ^3.0.0
-  camera: any
-  permission_handler: any
-  speech_to_text: any
-  audioplayers: any
-  flutter_secure_storage: any
-  flutter_overlay_window: any
+  camera: ^0.10.5+9
+  permission_handler: 11.3.1
+  speech_to_text: ^6.6.0
+  audioplayers: ^6.1.0
+  flutter_secure_storage: ^9.0.0
+  flutter_overlay_window: ^0.4.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
 flutter:
   uses-material-design: true
